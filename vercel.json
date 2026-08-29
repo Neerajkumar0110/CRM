@@ -6,7 +6,12 @@
     },
     "backend": {
       "root": "backend",
-      "entrypoint": "api/index.js"
+      "entrypoint": "api/index.js",
+      "functions": {
+        "api/index.js": {
+          "includeFiles": "src/**"
+        }
+      }
     }
   },
   "rewrites": [
